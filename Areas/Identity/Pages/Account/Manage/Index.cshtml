@@ -1,0 +1,52 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Profile";
+    ViewData["ActivePage"] = ManageNavPages.Index;
+}
+
+<h3>@ViewData["Title"] <i class="bi bi-file-person"></i></h3>
+<br />
+<partial name="_StatusMessage" for="StatusMessage" />
+<div class="row">
+    <div class="col-md-6">
+        <p><i class="bi bi-file-lock-fill"></i> Unique number :
+        <p class ="fw-bold">
+           <i class="bi bi-chevron-double-right"></i> @Model.Id
+        </p>
+        </p>
+        <p><i class="bi bi-briefcase-fill"></i> Email : 
+        <p class ="fw-bold">
+           <i class="bi bi-chevron-double-right"></i> @Model.Username
+        </p>        </p>
+        <p><i class="bi bi-person-fill"></i> Name :  
+        <p class ="fw-bold">
+           <i class="bi bi-chevron-double-right"></i> @Model.Atributes.Name
+        </p>
+        </p>
+        <p><i class="bi bi-flag-fill"></i> Country :  
+        <p class ="fw-bold">
+            <i class="bi bi-chevron-double-right"></i> @Model.Atributes.Country
+        </p>
+        </p>
+        <p><i class="bi bi-brightness-high-fill"></i> City :  
+        <p class ="fw-bold">
+           <i class="bi bi-chevron-double-right"></i> @Model.Atributes.City
+        </p>
+        </p>
+        <p><i class="bi bi-universal-access"></i> Gender :  
+        <p class ="fw-bold">
+          <i class="bi bi-chevron-double-right"></i>  @Model.Atributes.Gender
+        </p>
+        </p>
+        <p><i class="bi bi-activity"></i> Hobbys :  
+        <p class ="fw-bold">
+           <i class="bi bi-chevron-double-right"></i> @Model.Atributes.HobbysSavedInDatabase
+        </p>
+        </p>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

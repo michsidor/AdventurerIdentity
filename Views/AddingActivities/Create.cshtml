@@ -1,0 +1,70 @@
+﻿@model Activities
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="text-center">
+    <h1>Create new activity</h1>
+</div>
+<div class="text-center">
+   <img class="img-fluid resize" src = "/Images/logo.jpg"/>
+</div>
+
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="ShortDecription" class="control-label"></label>
+                <input asp-for="ShortDecription" class="form-control" />
+                <span asp-validation-for="ShortDecription" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="Decription" class="control-label"></label>
+                <input asp-for="Decription" class="form-control" />
+                <span asp-validation-for="Decription" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="City" class="control-label"></label>
+                <input asp-for="City" class="form-control" />
+                <span asp-validation-for="City" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="Destination" class="control-label"></label>
+                <input asp-for="Destination" class="form-control" />
+                <span asp-validation-for="Destination" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <label asp-for="Image" class="control-label">Select your main photo</label>
+                <input asp-for="Image" accept="image/*" />
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+           <legend class="mt-4 display-10"><i class="bi bi-card-checklist"></i> Select type of activity:</legend>
+	        @foreach(var item in @Model.Checkboxes){
+		        <div class ="form-check form-check-inline display-8" >
+			       <input class="form-check-input" type="checkbox" value="@item.Value" name="ChoosedTags" id="checkbox2_@item.Value" checked="@item.IsChecked">
+			       <label class="form-check-label" for="checkbox2_@item.Value"> @item.Value</label>
+		        </div>
+	        }
+
+            <div class="form-group">
+                <div class="text-end">
+                     <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </div>
+            <br />
+        </form>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

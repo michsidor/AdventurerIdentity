@@ -1,0 +1,144 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AdventurerOfficialProject
+build_property.RootNamespace = AdventurerOfficialProject
+build_property.ProjectDir = C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\Adventurer\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\michs\Desktop\OGOLNE\NAUKA PROGRAMOWANIA\C#\Adventurer
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Areas/Identity/Pages/Account/Manage/DeletingAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRpbmdBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Areas/Identity/Pages/Account/Manage/EditingAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRWRpdGluZ0FjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/ActivitiesBoard/ActivitiesBoardView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdGllc0JvYXJkXEFjdGl2aXRpZXNCb2FyZFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/ActivitiesBoard/Messanger.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdGllc0JvYXJkXE1lc3Nhbmdlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/ActivitiesBoard/SpecificActivityView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdGllc0JvYXJkXFNwZWNpZmljQWN0aXZpdHlWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/AddingActivities/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkaW5nQWN0aXZpdGllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/AddingAtributes/AddingAtributesView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkaW5nQXRyaWJ1dGVzXEFkZGluZ0F0cmlidXRlc1ZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/AddingAtributes/ConfirmingAccountView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkaW5nQXRyaWJ1dGVzXENvbmZpcm1pbmdBY2NvdW50Vmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/MyActivities/EditActivityView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlBY3Rpdml0aWVzXEVkaXRBY3Rpdml0eVZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/MyActivities/MyActivitiesView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlBY3Rpdml0aWVzXE15QWN0aXZpdGllc1ZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/Shared/_LogoutPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dvdXRQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qqstorndpm

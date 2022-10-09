@@ -1,0 +1,77 @@
+﻿@model ActivitiesEdit
+@{
+    ViewData["Title"] = "EditActivityView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-action="EditActivityView" enctype="multipart/form-data">
+
+<input asp-for="AddData" type="hidden" />
+<input asp-for="Id" type="hidden" />
+<input asp-for="identityUserId" type="hidden" />
+<input asp-for="UserName" type="hidden" />
+<input asp-for="OldImagePath" type="hidden" />
+
+<div class="text-center">
+    <h1>Edit your activity</h1>
+</div>
+<div class="text-center">
+   <img class="img-fluid resize" src = "/Images/logo.jpg"/>
+</div>
+<br />
+<div class="form-group row">
+  <label asp-for="Title" class="col-sm-2 col-form-label">Edit title</label>
+  <div class="col-sm-10">
+     <input asp-for="Title" class=form-control/>
+  </div>
+</div>
+<br />
+<div class="form-group row"> 
+  <label asp-for="Decription" class="col-sm-2 col-form-label">Edit description</label>
+  <div class="col-sm-10">
+     <input asp-for="Decription" class=form-control/>
+  </div>
+</div>
+<br />
+<div class="form-group row"> 
+  <label asp-for="ShortDecription" class="col-sm-2 col-form-label">Edit short description</label>
+  <div class="col-sm-10">
+     <input asp-for="ShortDecription" class=form-control/>
+  </div>
+</div>
+<br />
+<div class="form-group row"> 
+  <label asp-for="City" class="col-sm-2 col-form-label">Edit city</label>
+  <div class="col-sm-10">
+     <input asp-for="City" class=form-control/>
+  </div>
+</div>
+<br />
+<div class="form-group row"> 
+  <label asp-for="Destination" class="col-sm-2 col-form-label">Edit destination</label>
+  <div class="col-sm-10">
+     <input asp-for="Destination" class=form-control/>
+  </div>
+</div>
+<br />
+<div class="form-group row">
+  <label asp-for="Image" class="col-sm-2 col-form-label">Edit your photo</label>
+    <div class="col-sm-10">
+     <input asp-for="Image" accept="image/*" />
+    </div>
+</div>
+<br />
+  <legend class="mt-4 display-10"><i class="bi bi-card-checklist"></i> Select type of activity again:</legend>
+	@foreach(var item in @Model.Checkboxes){
+      <div class ="form-check form-check-inline display-8" >
+        <input class="form-check-input" type="checkbox" value="@item.Value" name="ChoosedTags" id="checkbox2_@item.Value" checked="@item.IsChecked">
+	    <label class="form-check-label" for="checkbox2_@item.Value"> @item.Value</label>
+	 </div>
+	}
+
+ <div class="form-group">
+     <div class="text-end">
+          <input type="submit" value="Edit" class="btn btn-primary" />
+     </div>
+ </div>
+ </form>

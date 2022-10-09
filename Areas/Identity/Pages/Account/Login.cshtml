@@ -1,0 +1,46 @@
+﻿@page
+@model LoginModel
+@{
+    ViewData["Title"] = "Log in";
+}
+
+<div class="text-center">
+    <h2 class="display-6">Log into your account</h2>
+</div>
+<div class="text-center">
+   <img class="img-fluid resize" src = "/Images/logo.jpg"/>
+</div>
+<br />
+     <form id="account" method="post">
+        <fieldset>
+                <div class="form-group">
+                    <label asp-for="Input.Email" class="form-label">Enter your login</label>
+                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Input.Password" class="form-label">
+                       Enter your password <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                    </label>
+                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="checkbox">
+                    <label asp-for="Input.RememberMe" class="form-label">
+                    <input class="form-check-input" asp-for="Input.RememberMe" />
+                        @Html.DisplayNameFor(m => m.Input.RememberMe)
+                    </label>
+                </div>
+        <div class ="mdl-layout-spacer">
+            <div class ="text-end">
+                   <p>Click button if you are sure about your choice: &nbsp;</p>
+                 <div>
+                    <button id="login-submit" type="submit" class="btn btn-primary">Log in</button>
+                </div>
+            </div>
+        </div>
+        </fieldset>
+    </form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

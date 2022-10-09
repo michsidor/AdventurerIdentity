@@ -1,0 +1,64 @@
+﻿@model IEnumerable<AdventurerOfficialProject.Models.Activities>
+
+@{
+    ViewData["Title"] = "ActivitiesBoardView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    var imageNameList = @Model.Select(im => im.ImageName).ToList();
+    var titleList = Model.Select(ti => ti.Title).ToList();
+    var idList = Model.Select(iden => iden.Id).ToList();
+    var descList = Model.Select(des => des.Decription).ToList();
+    var cityList = Model.Select(cit => cit.City).ToList();
+    var data = Model.Select(dat => dat.AddData).ToList();
+}
+
+<div class="text-center">
+<h1>Welcome to Adventurer activities board!</h1>
+<h2 class="text-muted">Do you want to experience something new?</h2>
+<h2 class="text-muted">Click on the activity and contact the author</h2>
+</div>
+<br />
+<form asp-action="ActivitiesBoardView" method="post">
+    <div class="form-actions no-color text-center">
+        <p>
+            Find activity in a particular city: <input type="text" name="filterString" value="@ViewData["CurrentFilter"]" />
+            <input type="submit" value="Filter" class="btn btn-warning" /> 
+            <a asp-action="ActivitiesBoardView">Back to Full List</a>
+        </p>
+    </div>
+</form>
+<br />
+
+<div class="row">
+    @for(int i = 0; i < imageNameList.Count(); i++)
+    {
+    <div class="col-sm-6">
+       <div class="card">
+        <div class="text-center bg-success">
+           <h2 class="card-header">
+                 <a asp-controller="ActivitiesBoard" asp-action="SpecificActivityView" asp-route-id="@idList[i]" class="text-white" style="text-decoration:none">@titleList[i]</a>
+           </h2>
+        </div>
+        <div class="card-body text-center bg-light bg-gradient">
+             <p><img class="img-fluid resize2" src="/SavedImages/@imageNameList[i]" asp-append-version="true"/></p>
+        </div>
+        <div class="bg-light text-center">
+             <h5 class="card-title">@descList[i]</h5>
+             <br>
+        </div>
+        <div class="card-footer text-muted-white bg-success text-white">
+           @cityList[i] - @data[i]  
+        </div>
+      </div>
+      <br />
+    </div>
+    }
+</div>
+
+
+
+  
+
+

@@ -1,0 +1,35 @@
+﻿@model UserAtributes
+
+<br />
+<div class ="display-8 text-center">
+	<h1>Almost done!</h1>
+    <br />
+    <h2>Just enter your code we sent you via email and enjoy the new activities!</h2>
+</div>
+<br />
+
+<form method="post">
+
+	     <div class="form-group">
+            <label asp-for="UniqueCodeConfirm">Enter your confirming code</label>
+            <input asp-for="UniqueCodeConfirm" class="form-control" placeholder="ABCD1234">
+         </div>
+         
+    @if(TempData["Alert"] != null)
+    {
+        <br />
+         <div class="alert alert-dismissible alert-secondary">
+              <strong>Ehhhhh <i class="bi bi-emoji-frown"></i> </strong> @TempData["Alert"]
+         </div>
+    }
+
+         <div class ="mdl-layout-spacer">
+             <div class ="text-end">
+                 <br />
+                    <p>Click button if you are sure about your choice: &nbsp;</p>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+             </div>
+         </div>
+
+
+</form>

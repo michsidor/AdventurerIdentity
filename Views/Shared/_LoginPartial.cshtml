@@ -1,0 +1,34 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+   <ul class="navbar-nav mr-auto">
+     <li class="nav-item">
+       <a class="nav-link" href='~/AddingActivities/Create'><i class="bi bi-plus-circle"></i> Add new activity</a>
+    </li>
+     <li class="nav-item">
+       <a class="nav-link" href='~/ActivitiesBoard/ActivitiesBoardView'><i class="bi bi-search-heart"></i> Activities market</a>
+    </li>
+    <li class="nav-item">
+       <a class="nav-link" href='~/MyActivities/MyActivitiesView'><i class="bi bi-search-heart"></i> My activities</a>
+    </li>
+    <li class="nav-item">
+        <a id="manage" class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage"><i class="bi bi-person-circle"></i> My account</a>
+    </li>
+   </ul>
+
+}
+else
+{
+      <ul class="navbar-nav">
+         <li class="nav-item">
+            <a class="nav-link" asp-area="Identity" asp-page="/Account/Register">Register</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" asp-area="Identity" asp-page="/Account/Login">Login</a>
+         </li>
+       </ul>
+}

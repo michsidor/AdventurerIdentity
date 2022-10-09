@@ -1,0 +1,58 @@
+﻿@model Activities
+@{
+    ViewData["Title"] = "SpecificActivityView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="text-center">
+<h1>Welcome to this activity!</h1>
+<h2 class="text-muted">Do you want to join?</h2>
+<h2 class="text-muted">Just write to author and sort out the details</h2>
+</div>
+
+
+<div class="text-center">
+   <img class="img-fluid resize" src = "/Images/logo.jpg"/>
+</div>
+<br />
+    <table class="table table-striped table-primary table-bordered">
+    <thead>
+        <tr class="w-25">
+            <th scope="col">#</th>
+            <th scope="col">Development</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-light">
+            <th scope="row">User name:</th>
+            <td>@Model.UserName</td>
+        </tr>
+        <tr class="table-light">
+            <th scope="row">Title:</th>
+            <td>@Model.Title</td>
+        </tr>
+        <tr class="table-light">
+            <th scope="row">Decription:</th>
+            <td>@Model.Decription</td>
+        </tr>
+        <tr class="table-light">
+            <th scope="row">Where I'am looking for:</th>
+            <td>@Model.City</td>
+        </tr>
+        <tr class="table-light">
+            <th scope="row">Where we will go:</th>
+            <td>@Model.Destination</td>
+        </tr>
+        <tr class="table-light">
+            <th scope="row">Tags:</th>
+            <td>@Model.TypeTags</td>
+        </tr>
+    </tbody>
+</table>
+<h2 class="card-header">
+    <a asp-controller="ActivitiesBoard" asp-action="Messanger">Idz do tej akcji</a>
+</h2>
+
+
+
+
+

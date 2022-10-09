@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Adventurer!</h1>
+    <p class="display-6">Meet new friends and change your life by beeing more active!</p>
+    <div class="text-center">
+     <img class="img-fluid" src = "/Images/logo.jpg" class= "detailImage" />
+    </div>
+</div>
+<div class="text-center">
+  </br>
+       <p>Don't have an account yet? Create one now</p>
+       <a class="nav-link" asp-area="Identity" asp-page="/Account/Register">
+          <button type="submit" class="btn btn-primary btn-lg">Create account</button>           
+       </a>
+  </br>
+</div>
+<div class="text-center">
+  <p>Want to see new activities? Log in now</p>
+       <a class="nav-link" asp-area="Identity" asp-page="/Account/Login">
+          <button type="submit" class="btn btn-primary btn-lg">Login</button>           
+       </a>
+  </br>
+</div>
+
+

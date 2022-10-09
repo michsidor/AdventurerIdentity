@@ -1,0 +1,54 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AdventurerOfficialProject</title>
+    <link rel="stylesheet" href="~/css/AdventurerBootstrapTheme.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href='~/Home/Index'>Adventurer</a>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+         <partial name="_LoginPartial" />
+    </div>
+  </div>
+  <partial name="_LogoutPartialView"/>
+</nav>
+
+<br />
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+<body class="d-flex flex-column min-vh-100">
+    <footer class="mt-auto">
+        <div class="container display-8" >
+          <table class="table table-hover">
+            <thead>
+                <tr>
+                     <td>Contact with me:</td>
+                     <td>Linkedin:  <a href="https://www.linkedin.com/in/micha%C5%82-sidor-320b81246/"> <i class = "bi bi-linkedin"></i> </a> </td>
+                     <td>Instagram: <a href="https://www.instagram.com/sidorski13/?hl=pl">              <i class = "bi bi-instagram"></i> </a></td>
+                     <td>Facebook:  <a href="https://www.facebook.com/michsid/">                        <i class = "bi bi-facebook"></i> </a> </td>
+                     <td>Github:    <a href="https://github.com/michsidor">                             <i class = "bi bi-github"></i> </a></i> </a> </td>
+                </tr>
+            </thead>
+          </table>                                
+        </div>
+    </footer>
+</body>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

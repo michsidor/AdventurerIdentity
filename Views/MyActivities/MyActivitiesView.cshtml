@@ -1,0 +1,36 @@
+﻿@model List<Activities>
+@{
+    ViewData["Title"] = "MyActivitiesView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="text-center">
+
+<h1>MyActivitiesView</h1>
+
+@foreach(var values in @Model){
+<br />
+    <div class="card">
+        <div class="text-center bg-success">
+           <h2 class="card-header">
+                 <a asp-controller="ActivitiesBoard" asp-action="SpecificActivityView" asp-route-id="@values.Id" class="text-white" style="text-decoration:none">@values.Title</a>
+           </h2>
+        </div>
+        <div class="card-body text-center bg-light bg-gradient">
+             <p><img class="img-fluid resize2" src="/SavedImages/@values.ImageName" asp-append-version="true"/></p>
+       </div>
+       <div class="bg-light text-center">
+             <h5 class="card-title">@values.ShortDecription</h5>
+             <br>
+       </div>
+        <div class="card-footer text-muted-white bg-success text-white">
+           @values.City - @values.AddData  
+        </div>
+        <div class="card-footer text-muted-white bg-danger text-white">
+           <a asp-controller="MyActivities" asp-action="EditActivityView" asp-route-id="@values.Id" class="text-white" style="text-decoration:none">Edit this post</a>
+        </div>
+    </div>
+  <br />
+}
+</div>
+<br />
+<br />

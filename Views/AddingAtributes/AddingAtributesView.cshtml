@@ -1,0 +1,56 @@
+﻿@model UserAtributes
+@{
+    ViewData["Title"] = "AddingAtributesView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+
+<div class="text-center">
+	<h1>Tell us  more about your self</h1>
+</div>
+
+<form method="post">
+
+	<div class="form-group">
+		<label asp-for="Name">Enter your name:</label>
+		<input asp-for="Name" class="form-control"> 
+	</div>
+	<br />
+	<div class="form-group">
+		<label asp-for="Country">Enter your country:</label>
+		<input asp-for="Country" class="form-control"> 
+	</div>
+	<br />
+
+    <div class="form-group">
+		<label asp-for="City">Enter your city:</label>
+		<input asp-for="City" class="form-control"> 
+    </div>
+	<br />
+
+    <div class="mb-3">
+	    <label class="form-label">Select your gender</label>
+	    <select class="form-select" asp-items="Model.GenderList" asp-for="Gender"></select>
+    </div>
+	<br />
+
+    <legend class="mt-4 display-10"><i class="bi bi-card-checklist"></i> Select your hobbies and interests:</legend>
+
+	@foreach(var item in @Model.Checkboxes){
+		<div class ="form-check form-check-inline display-8" >
+			<input class="form-check-input" type="checkbox" value="@item.Value" name="ChoosedHobbys" id="checkbox_@item.Value" checked="@item.IsChecked">
+			<label class="form-check-label" for="checkbox_@item.Value"> @item.Value</label>
+		</div>
+	}
+
+   <div class ="mdl-layout-spacer">
+       <div class ="text-end">
+           <br />
+           <p>Click button if you are sure about your choice: &nbsp;</p>
+           <button type="submit" class="btn btn-primary">Submit</button>
+       </div>
+   </div>
+
+</form>
+
