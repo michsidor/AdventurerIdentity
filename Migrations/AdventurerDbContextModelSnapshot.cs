@@ -104,6 +104,31 @@ namespace AdventurerOfficialProject.Migrations
                     b.ToTable("CountryModelDbSet");
                 });
 
+            modelBuilder.Entity("AdventurerOfficialProject.Models.Message", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("AddData")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Recipient")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Sender")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("userMessage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MessageDbSet");
+                });
+
             modelBuilder.Entity("AdventurerOfficialProject.Models.UserAtributes", b =>
                 {
                     b.Property<int>("Id")

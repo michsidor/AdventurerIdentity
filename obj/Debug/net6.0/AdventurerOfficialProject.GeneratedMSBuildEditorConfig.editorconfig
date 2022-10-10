@@ -83,10 +83,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdGllc0JvYXJkXEFjdGl2aXRpZXNCb2FyZFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/ActivitiesBoard/Messanger.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdGllc0JvYXJkXE1lc3Nhbmdlci5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/ActivitiesBoard/SpecificActivityView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdGllc0JvYXJkXFNwZWNpZmljQWN0aXZpdHlWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -105,6 +101,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/Messanger/AllconversationsView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FuZ2VyXEFsbGNvbnZlcnNhdGlvbnNWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/Messanger/MessangerView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FuZ2VyXE1lc3NhbmdlclZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/michs/Desktop/OGOLNE/NAUKA PROGRAMOWANIA/C\#/Adventurer/Views/MyActivities/EditActivityView.cshtml]

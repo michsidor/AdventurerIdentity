@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using AdventurerOfficialProject.Areas.Identity.Data;
 using AspNetCoreHero.ToastNotification;
 using AspNetCoreHero.ToastNotification.Extensions;
-using SignalRChat.Hubs;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,7 +14,6 @@ builder.Services.AddDbContext<AdventurerDbContext>(options =>
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<AdventurerDbContext>();
 
-builder.Services.AddSignalR();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -45,6 +43,5 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapRazorPages();
-app.MapHub<ChatHub>("/chatHub");
 
 app.Run();

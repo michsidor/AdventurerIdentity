@@ -12,7 +12,7 @@ public class AdventurerDbContext : IdentityDbContext<IdentityUser>
     public DbSet<Activities> ActivitiesDbSet { get; set; }
     public DbSet<CountryModel> CountryModelDbSet { get; set; }
     public DbSet<CityModel> CityModelDbSet { get; set; }
-
+    public DbSet<Message> MessageDbSet { get; set; }
 
     public AdventurerDbContext(DbContextOptions<AdventurerDbContext> options)
         : base(options)

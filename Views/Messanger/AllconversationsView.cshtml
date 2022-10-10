@@ -1,0 +1,19 @@
+﻿@model List<string>?
+@{
+    ViewData["Title"] = "AllconversationsView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>AllconversationsView</h1>
+<h2>@ViewData["Uzytkownik"]</h2>
+
+@foreach(var items in @Model){
+      <p>Nazwa uzytkownika z ktorym cos pisalem @items</p>
+        <div class="card">
+        <div class="text-center bg-success">
+        <h2 class="card-header">
+            <a asp-controller="Messanger" asp-action="MessangerView" asp-route-id="@items">Idz do tej akcji</a>
+        </h2>
+        </div>
+        </div>
+}

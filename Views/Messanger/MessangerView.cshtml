@@ -1,0 +1,52 @@
+﻿@model Message
+
+<div class="text-center">
+    <h2 class="display-6">Write message to me!</h2>
+</div>
+<br />
+@if (ViewData["messages"] != null)
+{
+   @foreach(var values in ViewData["messages"] as IList<Message>)
+   {
+        @if(@values.Sender == @Model.Sender)
+        {
+            <div class="alert alert-dismissible alert-info text-end">
+                  <strong>@values.userMessage</strong>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-dismissible alert-secondary">
+                  <strong>@values.userMessage</strong>
+            </div>        
+        }
+    }
+}
+
+
+
+else
+{
+    <p>Brak rozmow</p>
+}
+
+
+<form method="post">
+            <input asp-for="Recipient" type="hidden" />
+
+            <div class="form-group">
+                <label asp-for="userMessage">Wiadomosc</label>
+                <input asp-for="userMessage" class="form-control" autocomplete="username" aria-required="true" />
+            </div>
+            <div class ="mdl-layout-spacer">
+                 <div class ="text-end"> 
+                     <p>Click button if you are sure about your choice: &nbsp;</p>
+                     <button id="registerSubmit" type="submit" class=" btn btn-primary">Wyslij wiadomosc</button>
+                 </div>
+            </div>
+
+        </form>
+
+
+
+

@@ -1,6 +1,7 @@
 ﻿using AdventurerOfficialProject.Areas.Identity.Data;
 using AdventurerOfficialProject.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace AdventurerOfficialProject.Controllers
 {
@@ -40,6 +41,8 @@ namespace AdventurerOfficialProject.Controllers
 
             }
         }
+
+
         //GET
         public IActionResult SpecificActivityView(int? id)
         {
@@ -50,12 +53,6 @@ namespace AdventurerOfficialProject.Controllers
             return View(specModel);
         }
 
-
-
-        public IActionResult Messanger()
-        {
-            return View();
-        }
-
+     
     }
 }
