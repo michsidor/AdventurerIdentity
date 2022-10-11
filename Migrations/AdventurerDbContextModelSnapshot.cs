@@ -118,7 +118,15 @@ namespace AdventurerOfficialProject.Migrations
                     b.Property<string>("Recipient")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("RecipientName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Sender")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SenderName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("userMessage")

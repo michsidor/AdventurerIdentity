@@ -1,19 +1,24 @@
-﻿@model List<string>?
+﻿@model Dictionary<string,string>
 @{
     ViewData["Title"] = "AllconversationsView";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h1>AllconversationsView</h1>
-<h2>@ViewData["Uzytkownik"]</h2>
+<div class="text-center">
+   <img class="img-fluid resize" src = "/Images/logo.jpg"/>
+</div>
+<br />
 
 @foreach(var items in @Model){
-      <p>Nazwa uzytkownika z ktorym cos pisalem @items</p>
-        <div class="card">
-        <div class="text-center bg-success">
-        <h2 class="card-header">
-            <a asp-controller="Messanger" asp-action="MessangerView" asp-route-id="@items">Idz do tej akcji</a>
-        </h2>
-        </div>
-        </div>
+
+         <div class="card text-white bg-success mb-3 mx-auto" style="max-width: 20rem;">
+            <div class="card-header"><i class="bi bi-file-person"></i> @items.Key</div>
+               <div class="card-body">
+                  <h4 class="card-title">
+                      Write to me to arrange all the details
+                  </h4>
+                  <p class="card-text text-end text-white">
+                      <a asp-controller="Messanger" asp-action="MessangerView" asp-route-id="@items.Value" class="link-warning"><i class="bi bi-send-fill"></i></a>
+                  </p>
+              </div>
+           </div>
 }

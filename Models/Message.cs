@@ -8,5 +8,8 @@
         public string? userMessage { get; set; }
 
         public DateTime AddData { get; set; }
+
+        public string SenderName { get; set; }
+        public string RecipientName { get; set; }   
     }
 }
